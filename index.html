@@ -1,0 +1,1168 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover movies and series to watch next."
+    />
+    <title>Movie-website</title>
+    <link href="src/output.css" rel="stylesheet" />
+  </head>
+  <body class="min-w-0 overflow-x-hidden bg-[#050505] font-poppins text-white">
+    <header class="relative z-10 border-b border-white/10 bg-black text-white">
+      <nav
+        class="mx-auto flex w-full max-w-[1440px] flex-wrap items-center gap-4 px-5 py-4 lg:flex-nowrap lg:gap-x-10 lg:px-20 lg:py-10"
+      >
+        <div class="nav-links flex gap-3">
+          <a href="#home">Home</a>
+          <a href="#genre">Genre</a>
+          <a href="#country">Country</a>
+        </div>
+        <form
+          role="search"
+          class="search-bar order-3 flex w-full min-w-0 items-center justify-between gap-4 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-black lg:order-none lg:max-w-[360px]"
+        >
+          <label class="sr-only" for="movie-search">Search movies</label>
+          <input
+            placeholder="Search movies..."
+            class="min-w-0 flex-1 bg-transparent outline-none placeholder:text-gray-500"
+          />
+          <img
+            src="image/search-svgrepo-com.svg"
+            alt="Search Icon"
+            width="20"
+            height="20"
+          />
+        </form>
+        <div class="nav-links hidden gap-3 lg:flex">
+          <a href="#Movies">Movies</a>
+          <a href="#Series">Series</a>
+          <a href="#Recommended">Animation</a>
+        </div>
+        <button
+          class="bell-icon ml-auto rounded-full p-2"
+          type="button"
+          aria-label="Open notifications"
+        >
+          <img src="image/bell-svgrepo-com.svg" alt="" width="20" height="20" />
+        </button>
+      </nav>
+    </header>
+
+    <section
+      class="hero-section relative isolate flex min-h-[680px] flex-col items-start justify-end overflow-hidden bg-[#050505] bg-[url('../image/Rectangle.png')] bg-cover bg-center px-4 pb-12 pt-20 text-white before:absolute before:inset-0 before:z-0 before:bg-[linear-gradient(90deg,rgba(0,0,0,.88),rgba(0,0,0,.44),rgba(0,0,0,.12)),linear-gradient(0deg,#050505,transparent_42%)] before:content-[''] sm:min-h-[760px] sm:px-10 lg:px-20 lg:pt-28"
+    >
+      <div
+        class="absolute left-1/2 top-[35%] z-10 flex w-full -translate-x-1/2 flex-wrap justify-center gap-4"
+      >
+        <button
+          type="button"
+          class="flex flex-none items-center justify-center gap-x-3 rounded-md bg-[#ff0000] px-6 py-4 text-lg font-semibold sm:px-8"
+        >
+          <span>Watch now</span>
+          <img
+            src="image/play-circle-solid-svgrepo-com.svg"
+            alt=""
+            width="31"
+            height="31"
+          />
+        </button>
+        <button
+          type="button"
+          class="flex flex-none items-center justify-center gap-x-3 rounded-md border-2 border-red-600 bg-black/10 px-6 py-4 text-lg font-semibold sm:px-8"
+        >
+          <span>Watch later</span>
+          <img
+            src="image/clock-svgrepo-com.svg"
+            alt=""
+            width="20"
+            height="20"
+          />
+        </button>
+      </div>
+      <div
+        class="relative z-10 mr-auto flex w-full max-w-[860px] flex-col items-start gap-y-5"
+      >
+        <div
+          class="mt-10 font-poppins text-3xl font-bold leading-tight sm:text-5xl lg:text-6xl"
+        >
+          <h1>Avatar: The Way of Water</h1>
+        </div>
+        <div class="flex flex-wrap items-center gap-2.5">
+          <div
+            class="rounded-full bg-white px-3 py-3 text-sm font-semibold leading-none text-black sm:text-base"
+          >
+            <p>Action</p>
+          </div>
+          <div
+            class="rounded-full bg-white px-3 py-3 text-sm font-semibold leading-none text-black sm:text-base"
+          >
+            <p>Adventure</p>
+          </div>
+          <div
+            class="rounded-full bg-white px-4 py-3 text-sm font-semibold leading-none text-black sm:text-base"
+          >
+            <p>Science Fiction</p>
+          </div>
+          <div
+            class="flex gap-2 items-center font-poppins font-medium text-base leading-none tracking-normal"
+          >
+            <img
+              src="image/Group.svg"
+              alt="Clock Icon"
+              width="17.13"
+              height="17"
+            />
+            <span>2022</span>
+          </div>
+          <div
+            class="flex gap-2 items-center font-poppins font-medium text-base leading-none tracking-normal"
+          >
+            <img src="image/Vector.svg" alt="" width="17.13" height="17" />
+            <span>3:12:00</span>
+          </div>
+          <div
+            class="flex gap-2 items-center font-poppins font-medium text-base leading-none tracking-normal"
+          >
+            <img src="image/Vector (1).svg" alt="" width="17.13" height="17" />
+            <span>8.5</span>
+          </div>
+        </div>
+        <div class="max-w-3xl text-base font-medium leading-6 tracking-normal">
+          <p>
+            Set more than a decade after the events of the first film, learn the
+            story of the Sully family (Jake, Neytiri, and their kids), the
+            trouble that follows them, the lengths they go to keep each other
+            safe, the battles they fight to stay alive, and the tragedies they
+            endure.
+          </p>
+        </div>
+      </div>
+      <div
+        class="relative z-10 flex items-center gap-4 self-center pt-10 sm:pt-20"
+      >
+        <div class="rounded-full w-[34px] h-[15px] bg-red-700"></div>
+        <div class="rounded-full bg-white w-[21px] h-[21px]"></div>
+        <div class="rounded-full bg-white w-[21px] h-[21px]"></div>
+        <div class="rounded-full bg-white w-[21px] h-[21px]"></div>
+        <div class="rounded-full bg-white w-[21px] h-[21px]"></div>
+      </div>
+    </section>
+
+    <section
+      id="country"
+      class="overflow-hidden bg-black px-4 py-10 text-white sm:px-10 lg:px-20 lg:py-16"
+    >
+      <div>
+        <h1
+          class="font-poppins font-bold text-3xl leading-none tracking-normal"
+        >
+          Recently Updated
+        </h1>
+      </div>
+      <div class="flex flex-col gap-4 sm:flex-row sm:flex-wrap lg:gap-10">
+        <div class="flex items-center gap-x-5 px-4 py-2 text-white">
+          <div class="w-[64px] h-[103px]">
+            <img
+              src="image/ac4deff26cdd825913f2d377f51cba538b1f64dd.jpg"
+              alt=""
+            />
+          </div>
+          <div class="flex flex-col gap-y-3">
+            <h1
+              class="font-poppins font-bold text-xl leading-none tracking-normal"
+            >
+              The Flash
+            </h1>
+            <p
+              class="font-poppins font-medium text-base leading-none tracking-normal"
+            >
+              Series/ S 2/EP 9
+            </p>
+            <p
+              class="font-poppins font-medium text-base leading-none tracking-normal"
+            >
+              11/05/23
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center gap-x-5 px-4 py-2 text-white">
+          <div class="w-[64px] h-[103px]">
+            <img src="image/ff.jpg" alt="fuber" />
+          </div>
+          <div class="flex flex-col gap-y-3">
+            <h1
+              class="font-poppins font-bold text-xl leading-none tracking-normal"
+            >
+              Fubar
+            </h1>
+            <p
+              class="font-poppins font-medium text-base leading-none tracking-normal"
+            >
+              Series/ S 1/EP 8
+            </p>
+            <p
+              class="font-poppins font-medium text-base leading-none tracking-normal"
+            >
+              11/05/23
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center gap-x-5 px-4 py-2 text-white">
+          <div class="w-[64px] h-[103px]">
+            <img
+              src="image/7d7b159343d9887d3b818f07ab58683af15f003d.jpg"
+              alt=""
+            />
+          </div>
+          <div class="flex flex-col gap-y-3">
+            <h1
+              class="font-poppins font-bold text-xl leading-none tracking-normal"
+            >
+              manifest
+            </h1>
+            <p
+              class="font-poppins font-medium text-base leading-none tracking-normal"
+            >
+              Series/ S 4/EP 12
+            </p>
+            <p
+              class="font-poppins font-medium text-base leading-none tracking-normal"
+            >
+              11/05/23
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center gap-x-5 px-4 py-2 text-white">
+          <a
+            href="details.html"
+            class="w-[64px] shrink-0 rounded-md focus-visible:outline-2 focus-visible:outline-red-500"
+          >
+            <img
+              src="image/silo.jpg"
+              alt="Open Silo details"
+              class="h-[103px] w-[64px] rounded-md"
+            />
+          </a>
+          <div class="flex flex-col gap-y-3">
+            <h1
+              class="font-poppins font-bold text-xl leading-none tracking-normal"
+            >
+              Silo
+            </h1>
+            <p
+              class="font-poppins font-medium text-base leading-none tracking-normal"
+            >
+              Series/ S 1/EP 10
+            </p>
+            <p
+              class="font-poppins font-medium text-base leading-none tracking-normal"
+            >
+              11/05/23
+            </p>
+          </div>
+        </div>
+        <div
+          class="ml-auto flex size-15 items-center justify-center gap-x-2 rounded-full border border-gray-300 bg-white px-4 py-2 font-poppins text-base font-medium leading-none tracking-normal text-black"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                fill="#000000"
+              ></path>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="genre"
+      class="overflow-hidden bg-black px-4 py-10 text-white sm:px-10 lg:px-20 lg:py-16"
+    >
+      <div>
+        <div class="flex justify-between items-center">
+          <h1
+            class="font-poppins font-bold text-3xl leading-none tracking-normal"
+          >
+            Trending
+          </h1>
+          <a
+            href="#Movies"
+            class="flex items-center gap-x-2 font-poppins font-medium text-base leading-none tracking-normal"
+          >
+            View all
+            <span class="w-10 h-10 flex items-center justify-center">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                    fill="#ffffff"
+                  ></path>
+                </g>
+              </svg>
+            </span>
+          </a>
+        </div>
+        <div
+          class="trending-grid grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-10"
+        >
+          <article class="trending-card">
+            <div
+              class="trending-image relative aspect-[352/293] w-full max-w-full overflow-hidden rounded-md"
+            >
+              <img
+                class="block h-full w-full object-cover"
+                src="image/Rectangle 3.png"
+                alt="Medellin"
+              />
+              <div
+                class="absolute inset-x-4 top-4 flex justify-between text-sm font-medium text-white"
+              >
+                <span>◷ 3:12:00</span><span>★ 8.0</span>
+              </div>
+              <button
+                type="button"
+                aria-label="Play Medellin"
+                class="absolute left-1/2 top-1/2 grid size-16 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-white text-2xl text-black"
+              >
+                ▶
+              </button>
+            </div>
+            <div class="mt-5 flex flex-col gap-3">
+              <div>
+                <h1
+                  class="font-poppins text-2xl font-bold leading-none tracking-normal"
+                >
+                  Medellin
+                </h1>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <button
+                  class="rounded-full bg-red-600 px-3 py-1.5 text-xs font-semibold leading-none"
+                >
+                  Action
+                </button>
+                <button
+                  class="rounded-full bg-red-600 px-3 py-1.5 text-xs font-semibold leading-none"
+                >
+                  comedy
+                </button>
+                <button
+                  class="rounded-full bg-red-600 px-3 py-1.5 text-xs font-semibold leading-none"
+                >
+                  thriller
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="trending-card">
+            <div
+              class="trending-image relative aspect-[352/293] w-full max-w-full overflow-hidden rounded-md"
+            >
+              <img
+                class="block h-full w-full object-cover"
+                src="image/Rectangle 4.png"
+                alt="Fast X"
+              />
+              <div
+                class="absolute inset-x-4 top-4 flex justify-between text-sm font-medium text-white"
+              >
+                <span>◷ 3:12:00</span><span>★ 8.0</span>
+              </div>
+              <button
+                type="button"
+                aria-label="Play Fast X"
+                class="absolute left-1/2 top-1/2 grid size-16 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-white text-2xl text-black"
+              >
+                ▶
+              </button>
+            </div>
+            <div class="mt-5 flex flex-col gap-3">
+              <div>
+                <h1
+                  class="font-poppins text-2xl font-bold leading-none tracking-normal"
+                >
+                  Fast X
+                </h1>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <button
+                  class="rounded-full bg-red-600 px-3 py-1.5 text-xs font-semibold leading-none"
+                >
+                  Action
+                </button>
+                <button
+                  class="rounded-full bg-red-600 px-3 py-1.5 text-xs font-semibold leading-none"
+                >
+                  crime
+                </button>
+                <button
+                  class="rounded-full bg-red-600 px-3 py-1.5 text-xs font-semibold leading-none"
+                >
+                  thriller
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="trending-card">
+            <div
+              class="trending-image relative aspect-[352/293] w-full max-w-full overflow-hidden rounded-md"
+            >
+              <img
+                class="block h-full w-full object-cover"
+                src="image/Rectangle 5.png"
+                alt="The Black Demon"
+              />
+              <div
+                class="absolute inset-x-4 top-4 flex justify-between text-sm font-medium text-white"
+              >
+                <span>◷ 3:12:00</span><span>★ 8.0</span>
+              </div>
+              <button
+                type="button"
+                aria-label="Play The Black Demon"
+                class="absolute left-1/2 top-1/2 grid size-16 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-white text-2xl text-black"
+              >
+                ▶
+              </button>
+            </div>
+            <div class="mt-5 flex flex-col gap-3">
+              <div>
+                <h1
+                  class="font-poppins text-2xl font-bold leading-none tracking-normal"
+                >
+                  The Black Demon
+                </h1>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <button
+                  class="rounded-full bg-red-600 px-3 py-1.5 text-xs font-semibold leading-none"
+                >
+                  horror
+                </button>
+                <button
+                  class="rounded-full bg-red-600 px-3 py-1.5 text-xs font-semibold leading-none"
+                >
+                  thriller
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="Movies"
+      class="release-section overflow-hidden bg-black px-4 py-10 text-white sm:px-10 lg:px-20 lg:py-16"
+    >
+      <div>
+        <div class="mb-7 flex items-center justify-between gap-4">
+          <h2
+            class="font-poppins text-3xl font-bold leading-none tracking-normal"
+          >
+            New Release - Movies
+          </h2>
+          <a
+            href="#Movies"
+            class="flex shrink-0 items-center gap-2 font-poppins text-base font-medium"
+          >
+            View all <span aria-hidden="true" class="text-2xl">&rarr;</span>
+          </a>
+        </div>
+        <div
+          class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10"
+        >
+          <article class="release-card">
+            <div
+              class="release-poster aspect-[256/344] overflow-hidden rounded-md"
+            >
+              <img
+                class="block h-full w-full object-cover"
+                src="image/g1.jpg"
+                alt="Ghosted"
+              />
+            </div>
+            <div
+              class="release-info mt-5 flex items-center gap-2 max-sm:flex-wrap"
+            >
+              <h3
+                class="min-w-0 flex-1 text-lg font-bold leading-tight max-sm:basis-full"
+              >
+                Ghosted
+              </h3>
+              <span
+                class="release-badge shrink-0 rounded bg-red-600 px-2 py-1 text-[11px] font-bold leading-none"
+                >HD</span
+              ><span
+                class="release-duration shrink-0 rounded border border-red-600 px-2 py-1 text-[11px] leading-none"
+                >3:12:00</span
+              >
+            </div>
+          </article>
+          <article class="release-card">
+            <div
+              class="release-poster aspect-[256/344] overflow-hidden rounded-md"
+            >
+              <img
+                class="block h-full w-full object-cover"
+                src="image/g2.jpg"
+                alt="John Wick Chapter 4"
+              />
+            </div>
+            <div
+              class="release-info mt-5 flex items-center gap-2 max-sm:flex-wrap"
+            >
+              <h3
+                class="min-w-0 flex-1 text-lg font-bold leading-tight max-sm:basis-full"
+              >
+                John Wick: Chapter 4
+              </h3>
+              <span
+                class="release-badge shrink-0 rounded bg-red-600 px-2 py-1 text-[11px] font-bold leading-none"
+                >HD</span
+              ><span
+                class="release-duration shrink-0 rounded border border-red-600 px-2 py-1 text-[11px] leading-none"
+                >3:12:00</span
+              >
+            </div>
+          </article>
+          <article class="release-card">
+            <div
+              class="release-poster aspect-[256/344] overflow-hidden rounded-md"
+            >
+              <img
+                class="block h-full w-full object-cover"
+                src="image/g3.jpg"
+                alt="Guardians of the Galaxy Vol. 3"
+              />
+            </div>
+            <div
+              class="release-info mt-5 flex items-center gap-2 max-sm:flex-wrap"
+            >
+              <h3
+                class="min-w-0 flex-1 text-lg font-bold leading-tight max-sm:basis-full"
+              >
+                Guardians of the Galaxy Vol. 3
+              </h3>
+              <span
+                class="release-badge shrink-0 rounded bg-red-600 px-2 py-1 text-[11px] font-bold leading-none"
+                >HD</span
+              ><span
+                class="release-duration shrink-0 rounded border border-red-600 px-2 py-1 text-[11px] leading-none"
+                >3:12:00</span
+              >
+            </div>
+          </article>
+          <article class="release-card">
+            <div
+              class="release-poster aspect-[256/344] overflow-hidden rounded-md"
+            >
+              <img
+                class="block h-full w-full object-cover"
+                src="image/g4.jpg"
+                alt="The Covenant"
+              />
+            </div>
+            <div
+              class="release-info mt-5 flex items-center gap-2 max-sm:flex-wrap"
+            >
+              <h3
+                class="min-w-0 flex-1 text-lg font-bold leading-tight max-sm:basis-full"
+              >
+                The Covenant
+              </h3>
+              <span
+                class="release-badge shrink-0 rounded bg-red-600 px-2 py-1 text-[11px] font-bold leading-none"
+                >HD</span
+              ><span
+                class="release-duration shrink-0 rounded border border-red-600 px-2 py-1 text-[11px] leading-none"
+                >3:12:00</span
+              >
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="Series"
+      class="overflow-hidden bg-black px-4 py-10 text-white sm:px-10 lg:px-20 lg:py-16"
+    >
+      <div>
+        <div class="flex justify-between items-center">
+          <h1
+            class="font-poppins font-bold text-3xl leading-none tracking-normal"
+          >
+            New Release - Series
+          </h1>
+          <a
+            href="#Recommended"
+            class="flex items-center gap-x-2 font-poppins font-medium text-base leading-none tracking-normal"
+          >
+            View all
+            <span class="w-10 h-10 flex items-center justify-center">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                    fill="#ffffff"
+                  ></path>
+                </g>
+              </svg>
+            </span>
+          </a>
+        </div>
+
+        <div
+          class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10"
+        >
+          <div class="flex flex-col">
+            <div class="aspect-[256/344] w-full max-w-full">
+              <a
+                href="details.html"
+                class="block rounded-md focus-visible:outline-2 focus-visible:outline-red-500"
+              >
+                <img
+                  src="image/h1.jpg"
+                  alt="Open Silo details"
+                  class="block cursor-pointer rounded-md"
+                />
+              </a>
+            </div>
+            <div class="flex justify-between mt-12">
+              <div>
+                <p
+                  class="font-poppins font-bold text-2xl leading-none tracking-normal"
+                >
+                  Silo
+                </p>
+              </div>
+              <div class="flex gap-1">
+                <div>
+                  <h1
+                    class="rounded bg-red-600 px-2 py-1 text-xs font-bold text-white"
+                  >
+                    HD
+                  </h1>
+                </div>
+                <div class="flex gap-1">
+                  <p
+                    class="rounded border border-red-600 px-2 py-1 text-xs text-white"
+                  >
+                    Season 1
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="flex flex-col">
+              <div class="aspect-[256/344] w-full max-w-full">
+                <img src="image/h2.jpg" alt="" />
+              </div>
+              <div class="flex justify-between mt-12">
+                <div>
+                  <p
+                    class="font-poppins font-bold text-2xl leading-none tracking-normal"
+                  >
+                    Black Knight
+                  </p>
+                </div>
+                <div class="flex gap-1">
+                  <div>
+                    <h1
+                      class="rounded bg-red-600 px-2 py-1 text-xs font-bold text-white"
+                    >
+                      HD
+                    </h1>
+                  </div>
+                  <div class="flex gap-1">
+                    <p
+                      class="rounded border border-red-600 px-2 py-1 text-xs text-white"
+                    >
+                      Season 1
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="flex flex-col">
+              <div class="aspect-[256/344] w-full max-w-full">
+                <img src="image/h3.jpg" alt="" />
+              </div>
+              <div class="flex justify-between mt-12">
+                <div>
+                  <p
+                    class="font-poppins font-bold text-xl leading-none tracking-normal"
+                  >
+                    Drops of God
+                  </p>
+                </div>
+                <div class="flex gap-1">
+                  <div>
+                    <h1
+                      class="rounded bg-red-600 px-2 py-1 text-xs font-bold text-white"
+                    >
+                      HD
+                    </h1>
+                  </div>
+                  <div class="flex gap-1">
+                    <p
+                      class="rounded border border-red-600 px-2 py-1 text-xs text-white"
+                    >
+                      Season 1
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="flex flex-col">
+              <div class="aspect-[256/344] w-full max-w-full">
+                <img src="image/h4.jpg" alt="" />
+              </div>
+              <div class="flex justify-between mt-12">
+                <div>
+                  <p
+                    class="font-poppins font-bold text-2xl leading-none tracking-normal"
+                  >
+                    The Night Agent
+                  </p>
+                </div>
+                <div class="flex gap-1">
+                  <div>
+                    <h1
+                      class="rounded bg-red-600 px-2 py-1 text-xs font-bold text-white"
+                    >
+                      HD
+                    </h1>
+                  </div>
+                  <div class="flex gap-1">
+                    <p
+                      class="rounded border border-red-600 px-2 py-1 text-xs text-white"
+                    >
+                      Season 1
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="Recommended"
+      class="overflow-hidden bg-black px-4 py-10 text-white sm:px-10 lg:px-20 lg:py-16"
+    >
+      <div>
+        <div class="flex flex-wrap items-center justify-between gap-4">
+          <h1
+            class="font-poppins font-bold text-3xl leading-none tracking-normal"
+          >
+            Recommended
+          </h1>
+          <div class="flex gap-3 text-sm">
+            <button
+              type="button"
+              class="rounded-xl bg-red-600 px-4 py-3 font-semibold"
+            >
+              Movies
+            </button>
+            <button
+              type="button"
+              class="rounded-xl border border-red-600 px-4 py-3 text-white/70"
+            >
+              Series
+            </button>
+            <button
+              type="button"
+              class="rounded-xl border border-red-600 px-4 py-3 text-white/70"
+            >
+              Animation
+            </button>
+          </div>
+          <h2
+            class="flex items-center gap-x-2 font-poppins font-medium text-base leading-none tracking-normal"
+          >
+            View all
+            <span class="w-10 h-10 flex items-center justify-center">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z"
+                    fill="#ffffff"
+                  ></path>
+                </g>
+              </svg>
+            </span>
+          </h2>
+        </div>
+
+        <div
+          class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10"
+        >
+          <div class="flex flex-col">
+            <div class="aspect-[256/344] w-full max-w-full">
+              <img src="image/i1.jpg" alt="" />
+            </div>
+            <div class="flex justify-between mt-12">
+              <div>
+                <p
+                  class="font-poppins font-bold text-2xl leading-none tracking-normal"
+                >
+                  Robots
+                </p>
+              </div>
+              <div class="flex gap-1">
+                <div>
+                  <h1
+                    class="rounded bg-red-600 px-2 py-1 text-xs font-bold text-white"
+                  >
+                    CAM
+                  </h1>
+                </div>
+                <div class="flex gap-1">
+                  <img
+                    src="image/clock-svgrepo-com (1).svg"
+                    alt=""
+                    class="w-[13.3px] h-[13.3px]"
+                  />
+
+                  <p
+                    class="rounded border border-red-600 px-2 py-1 text-xs text-white"
+                  >
+                    3:12:00
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="flex flex-col">
+              <div class="aspect-[256/344] w-full max-w-full">
+                <img src="image/i2.jpg" alt="" />
+              </div>
+              <div class="flex justify-between mt-12">
+                <div>
+                  <p
+                    class="font-poppins font-bold text-2xl leading-none tracking-normal"
+                  >
+                    Love Again
+                  </p>
+                </div>
+                <div class="flex gap-1">
+                  <div>
+                    <h1
+                      class="rounded bg-red-600 px-2 py-1 text-xs font-bold text-white"
+                    >
+                      CAM
+                    </h1>
+                  </div>
+                  <div class="flex gap-1">
+                    <img
+                      src="image/clock-svgrepo-com (1).svg"
+                      alt=""
+                      class="w-[13.3px] h-[13.3px]"
+                    />
+                    <p
+                      class="rounded border border-red-600 px-2 py-1 text-xs text-white"
+                    >
+                      3:12:00
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="flex flex-col">
+              <div class="aspect-[256/344] w-full max-w-full">
+                <img src="image/i3.jpg" alt="" />
+              </div>
+              <div class="flex justify-between mt-12">
+                <div>
+                  <p
+                    class="font-poppins font-bold text-xl leading-none tracking-normal"
+                  >
+                    Hypnotic
+                  </p>
+                </div>
+                <div class="flex gap-1">
+                  <div>
+                    <h1
+                      class="rounded bg-red-600 px-2 py-1 text-xs font-bold text-white"
+                    >
+                      CAM
+                    </h1>
+                  </div>
+                  <div class="flex gap-1">
+                    <img
+                      src="image/clock-svgrepo-com (1).svg"
+                      alt=""
+                      class="w-[13.3px] h-[13.3px]"
+                    />
+                    <p
+                      class="rounded border border-red-600 px-2 py-1 text-xs text-white"
+                    >
+                      3:12:00
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="flex flex-col">
+              <div class="aspect-[256/344] w-full max-w-full">
+                <img src="image/i4.jpg" alt="" />
+              </div>
+              <div class="flex justify-between mt-12">
+                <div>
+                  <p
+                    class="font-poppins font-bold text-2xl leading-none tracking-normal"
+                  >
+                    Paint
+                  </p>
+                </div>
+                <div class="flex gap-1">
+                  <div>
+                    <h1
+                      class="rounded bg-red-600 px-2 py-1 text-xs font-bold text-white"
+                    >
+                      HD
+                    </h1>
+                  </div>
+                  <div class="flex gap-1">
+                    <img
+                      src="image/clock-svgrepo-com (1).svg"
+                      alt=""
+                      class="w-[13.3px] h-[13.3px]"
+                    />
+                    <p
+                      class="rounded border border-red-600 px-2 py-1 text-xs text-white"
+                    >
+                      3:12:00
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="overflow-hidden bg-black px-4 py-10 text-white sm:px-10 lg:px-20 lg:py-16"
+    >
+      <div
+        class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10"
+      >
+        <div class="flex flex-col">
+          <div class="aspect-[256/344] w-full max-w-full">
+            <img src="image/i5.jpg" alt="" />
+          </div>
+          <div class="flex justify-between mt-12">
+            <div>
+              <p
+                class="font-poppins font-bold text-2xl leading-none tracking-normal"
+              >
+                Book Club
+              </p>
+            </div>
+            <div class="flex gap-1">
+              <div>
+                <h1
+                  class="rounded bg-red-600 px-2 py-1 text-xs font-bold text-white"
+                >
+                  CAM
+                </h1>
+              </div>
+              <div class="flex gap-1">
+                <img
+                  src="image/clock-svgrepo-com (1).svg"
+                  alt=""
+                  class="w-[13.3px] h-[13.3px]"
+                />
+                <p
+                  class="rounded border border-red-600 px-2 py-1 text-xs text-white"
+                >
+                  3:12:00
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="flex flex-col">
+            <div class="aspect-[256/344] w-full max-w-full">
+              <img src="image/i6.jpg" alt="" />
+            </div>
+            <div class="flex justify-between mt-12">
+              <div>
+                <p
+                  class="font-poppins font-bold text-2xl leading-none tracking-normal"
+                >
+                  The Mother
+                </p>
+              </div>
+              <div class="flex gap-1">
+                <div>
+                  <h1
+                    class="rounded bg-red-600 px-2 py-1 text-xs font-bold text-white"
+                  >
+                    HD
+                  </h1>
+                </div>
+                <div class="flex gap-1">
+                  <img
+                    src="image/clock-svgrepo-com (1).svg"
+                    alt=""
+                    class="w-[13.3px] h-[13.3px]"
+                  />
+                  <p
+                    class="rounded border border-red-600 px-2 py-1 text-xs text-white"
+                  >
+                    3:12:00
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="flex flex-col">
+            <div class="aspect-[256/344] w-full max-w-full">
+              <img src="image/i8.jpg" alt="" />
+            </div>
+            <div class="flex justify-between mt-12">
+              <div>
+                <p
+                  class="font-poppins font-bold text-xl leading-none tracking-normal"
+                >
+                  January 6th
+                </p>
+              </div>
+              <div class="flex gap-1">
+                <div>
+                  <h1
+                    class="rounded bg-red-600 px-2 py-1 text-xs font-bold text-white"
+                  >
+                    HD
+                  </h1>
+                </div>
+                <div class="flex gap-1">
+                  <img
+                    src="image/clock-svgrepo-com (1).svg"
+                    alt=""
+                    class="w-[13.3px] h-[13.3px]"
+                  />
+                  <p
+                    class="rounded border border-red-600 px-2 py-1 text-xs text-white"
+                  >
+                    3:12:00
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="flex flex-col">
+            <div class="aspect-[256/344] w-full max-w-full">
+              <img src="image/i9.jpg" alt="" />
+            </div>
+            <div class="flex justify-between mt-12">
+              <div>
+                <p
+                  class="font-poppins font-bold text-2xl leading-none tracking-normal"
+                >
+                  Sisu
+                </p>
+              </div>
+              <div class="flex gap-1">
+                <div>
+                  <h1
+                    class="rounded bg-red-600 px-2 py-1 text-xs font-bold text-white"
+                  >
+                    HD
+                  </h1>
+                </div>
+                <div class="flex gap-1">
+                  <img
+                    src="image/clock-svgrepo-com (1).svg"
+                    alt=""
+                    class="w-[13.3px] h-[13.3px]"
+                  />
+                  <p
+                    class="rounded border border-red-600 px-2 py-1 text-xs text-white"
+                  >
+                    3:12:00
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
